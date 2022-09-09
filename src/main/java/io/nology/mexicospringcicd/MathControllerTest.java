@@ -20,6 +20,15 @@ public class MathControllerTest {
 		Integer expected = 20000;
 		assertEquals(expected, result);
 	}
+
+		@Test
+	public void rectanglePerimeterReturnsCorrectArea() {
+		Integer height = 100;
+		Integer width = 200;
+		Integer result = controller.rectanglePerimeter(height, width);
+		Integer expected = 20000;
+		assertEquals(expected, result);
+	}
 	
 	@Test
 	public void circlePerimeterReturnsCorrectResult() {
