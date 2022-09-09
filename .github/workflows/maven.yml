@@ -22,8 +22,8 @@ jobs:
             - name: Build with Maven
               run: mvn -B package --file pom.xml
             - name: Deploy to Heroku
-                uses: akhileshns/heroku-deploy@v3.12.12
-                with:
-                    heroku_app_name: 'gubbert-testworthy-cicd-spring'
-                    heroku_api_key: ${{secrets.HEROKU_API_KEY}}
-                    heroku_email: 'samuel.gubbins@gmail.com'
+              uses: akhileshns/heroku-deploy@v3.12.12
+              with:
+                heroku_app_name: 'gubbert-testworthy-cicd-spring'
+                heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+                heroku_email: 'samuel.gubbins@gmail.com'
